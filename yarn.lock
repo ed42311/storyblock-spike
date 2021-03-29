@@ -1924,7 +1924,7 @@
     js-cookie "^2.2.1"
     vue "^2.6.x"
 
-"@vue-storefront/core@^2.3.0-rc.2":
+"@vue-storefront/core@^2.3.0-rc.1", "@vue-storefront/core@^2.3.0-rc.2":
   version "2.3.0-rc.2"
   resolved "https://registry.yarnpkg.com/@vue-storefront/core/-/core-2.3.0-rc.2.tgz#18215093f382e2f5bd0e44d36bfd24c4c0a5bf0c"
   integrity sha512-fDOQ0VDfHXVrw2E/tqG5TjnS+tfL5LsVNdFC59dHPcrji3uUUCb00JK6OJccwYFKqhzxv7D+KAj08KbBZrIQQQ==
@@ -1970,6 +1970,17 @@
     consola "^2.10.1"
     lodash "^4.17.15"
     nuxt-purgecss "^1.0.0"
+
+"@vue-storefront/storyblok@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@vue-storefront/storyblok/-/storyblok-0.2.0.tgz#cf8d498281a6a948f9df7b9e10745ba3b3442c22"
+  integrity sha512-RAX73TTzeyC2LW50wy2BdrO4wHEkF4pWjuotqmSqGYRbKihtegwmfCtPlB06h49SHTQ6Y0aLHYtRLQ0pXpzgtg==
+  dependencies:
+    "@vue-storefront/core" "^2.3.0-rc.1"
+    axios latest
+    rollup latest
+    storyblok-js-client latest
+    tslib latest
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
@@ -2707,7 +2718,7 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
 
-axios@0.21.1:
+axios@0.21.1, axios@latest:
   version "0.21.1"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
   integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
@@ -9468,6 +9479,13 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+rollup@latest:
+  version "2.44.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.44.0.tgz#8da324d1c4fd12beef9ae6e12f4068265b6d95eb"
+  integrity sha512-rGSF4pLwvuaH/x4nAS+zP6UNn5YUDWf/TeEU5IoXSZKBbKRNTCI3qMnYXKZgrC0D2KzS2baiOZt1OlqhMu5rnQ==
+  optionalDependencies:
+    fsevents "~2.3.1"
+
 rsvp@^4.8.4:
   version "4.8.5"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-4.8.5.tgz#c8f155311d167f68f21e168df71ec5b083113734"
@@ -10087,6 +10105,13 @@ stealthy-require@^1.1.1:
   resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
+storyblok-js-client@latest:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-3.3.1.tgz#459eee7a581d5f3fc12156a428f1b3195201bb06"
+  integrity sha512-aVLYjAcXlsy4WuFLWJTci2Z5RTAxU5mW1jCZkNztXAqIsxlTqPfjYNGVjZXi0MJjvBcRHXUMN+6IpEnUEQ2azQ==
+  dependencies:
+    qs "^6.9.4"
+
 stream-browserify@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-2.0.2.tgz#87521d38a44aa7ee91ce1cd2a47df0cb49dd660b"
@@ -10601,7 +10626,7 @@ tslib@^1.10.0, tslib@^1.9.0, tslib@^1.9.3:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.1, tslib@^2.0.3, tslib@^2.1.0:
+tslib@^2.0.1, tslib@^2.0.3, tslib@^2.1.0, tslib@latest:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
   integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==

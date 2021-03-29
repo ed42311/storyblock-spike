@@ -1,7 +1,6 @@
 import webpack from 'webpack';
 
 export default {
-  mode: 'universal',
   server: {
     port: 3000,
     host: '0.0.0.0'
@@ -60,11 +59,11 @@ export default {
       useRawSource: {
         dev: [
           '@vue-storefront/commercetools',
-          '@vue-storefront/core'
+          '@vue-storefront/core',
         ],
         prod: [
           '@vue-storefront/commercetools',
-          '@vue-storefront/core'
+          '@vue-storefront/core',
         ]
       }
     }],
@@ -79,7 +78,8 @@ export default {
     'nuxt-i18n',
     'cookie-universal-nuxt',
     'vue-scrollto/nuxt',
-    '@vue-storefront/middleware/nuxt'
+    '@vue-storefront/middleware/nuxt',
+    ['@vue-storefront/storyblok/nuxt']
   ],
   i18n: {
     currency: 'USD',

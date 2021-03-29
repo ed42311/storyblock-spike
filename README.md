@@ -6,9 +6,7 @@
 
 Site: https://www.storyblok.com/
 
-https://docs.vuestorefront.io/storyblok/guide/content.html
-
-more:  https://www.storyblok.com/tp/nuxt-js-multilanguage-website-tutorial#environment-setup
+content: https://docs.vuestorefront.io/storyblok/guide/content.html
 
 repo:  https://github.com/vuestorefront/storyblok
 
