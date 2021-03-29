@@ -158,5 +158,6 @@ export default {
         })
       })
     ]
-  }
+  },
+  plugins: ['~/plugins/cms'],
 };
