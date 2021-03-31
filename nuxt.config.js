@@ -5,6 +5,7 @@ export default {
     port: 3000,
     host: '0.0.0.0'
   },
+  plugins: ['~/plugins/cms'],
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -60,10 +61,12 @@ export default {
         dev: [
           '@vue-storefront/commercetools',
           '@vue-storefront/core',
+          '@vue-storefront/storyblok'
         ],
         prod: [
           '@vue-storefront/commercetools',
           '@vue-storefront/core',
+          '@vue-storefront/storyblok'
         ]
       }
     }],
@@ -158,6 +161,5 @@ export default {
         })
       })
     ]
-  },
-  plugins: ['~/plugins/cms'],
+  }
 };

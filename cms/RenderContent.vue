@@ -12,6 +12,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { extractComponents } from '@vue-storefront/storyblok'
+import Banner from '~/cms/Banner.vue'
 
 interface RenderContent {
   componentName: string
@@ -20,6 +21,9 @@ interface RenderContent {
 
 export default Vue.extend({
   name: 'RenderContent',
+  components: {
+    Banner
+  },
   props: {
     content: {
       type: Array,
@@ -27,6 +31,23 @@ export default Vue.extend({
   },
   computed: {
     components(): RenderContent[] {
+      console.log("computed")
+      // 4. Storyblok call is getting through...  mapping maybe incorrect ?
+      // [                                                                                                                      12:29:31
+      //   {
+      //     componentName: 'banner',
+      //     props: {
+      //       _uid: '7f9dc04d-a6e2-475b-ae80-02e480345f17',
+      //       image: [Object],
+      //       title: 'hello',
+      //       subtitle: 'hello',
+      //       component: 'banner',
+      //       background: 'hello',
+      //       banner_text: 'hello',
+      //       description: 'hello'
+      //     }
+      //   }
+      // ]
       return extractComponents(this.content)
     },
   },

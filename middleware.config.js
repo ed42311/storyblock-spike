@@ -22,16 +22,16 @@ module.exports = {
             'view_published_products:vsf-ct-dev'
           ]
         },
-        sb: {
-          location: '@vue-storefront/storyblok/server',
-          configuration: {
-            token: process.env.STORYBLOK_SPACE_TOKEN,
-            cacheProvider: 'memory',
-          },
-        },
         currency: 'USD',
         country: 'US'
       }
-    }
+    },
+    sb: {
+      location: '@vue-storefront/storyblok/server',
+      configuration: {
+        token: process.env.STORYBLOK_SPACE_TOKEN,
+        cacheProvider: 'memory',
+      },
+    },
   }
 };
