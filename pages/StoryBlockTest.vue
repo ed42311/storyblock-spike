@@ -2,8 +2,7 @@
   <div>
     <div v-if="loading">Loading content...</div>
     
-    <!-- 1. Error is possibly blocking render? -->
-    <!-- <div v-if="error">{{error}}</div> -->
+    <div v-if="error">Error</div>
     <div v-if="content">
       <render-content :content="content.content.body" />
     </div>
@@ -22,8 +21,7 @@ export default {
   },
   setup() {
     const { search, content, loading, error } = useContent()
-
-    // get data
+    
     onSSR(async () => {
       await search({ slug: 'home' })
     })
