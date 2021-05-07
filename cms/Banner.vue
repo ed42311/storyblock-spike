@@ -2,6 +2,7 @@
   <SfBanner 
     :title="title"
     :subtitle="subtitle"
+    :description="description"
   />
 </template>
 
@@ -15,7 +16,8 @@ export default {
   },
   props: {
     title: '',
-    subtitle: ''
+    subtitle: '',
+    description: '',
   }
 }
 </script>

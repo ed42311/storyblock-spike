@@ -47,6 +47,14 @@ export default {
       } else {
         return { x: 0, y: 0 };
       }
+    },
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'custom',
+        path: '/customer-service/*',
+        component: resolve(__dirname, 'pages/StandardTemplate.vue')
+      })
+      return routes;
     }
   },
   buildModules: [

@@ -21,7 +21,7 @@ export default {
   },
   setup() {
     const { search, content, loading, error } = useContent()
-    
+
     onSSR(async () => {
       await search({ slug: 'home' })
     })
