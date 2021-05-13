@@ -1130,6 +1130,18 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
+"@marvr/storyblok-rich-text-types@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@marvr/storyblok-rich-text-types/-/storyblok-rich-text-types-2.0.1.tgz#068c45a1ed9112d1a10ca6b7202ed787771f5f23"
+  integrity sha512-S11Aey2mpmg2qXuI2OnhKMpEoZW8OzMhuDiLg9zW5Mqlna5g8aJSmy2468feo/0qOLwAT3gpHyNScPKBTtTswQ==
+
+"@marvr/storyblok-rich-text-vue-renderer@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@marvr/storyblok-rich-text-vue-renderer/-/storyblok-rich-text-vue-renderer-2.0.1.tgz#ff8ca1334ce1d9734a51d657b2a8000e64142ac8"
+  integrity sha512-bz3IRyTAx/XoG9Myt90oEcXrZmmRjZXsTL3qlT1EGYO9P2JTr1KIz+7DNvew+Ui1a4U036TCFsCp151LjB88NQ==
+  dependencies:
+    "@marvr/storyblok-rich-text-types" "2.0.1"
+
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.4.tgz#d4b3549a5db5de2683e0c1071ab4f140904bbf69"

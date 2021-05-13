@@ -5,7 +5,11 @@ export default {
     port: 3000,
     host: '0.0.0.0'
   },
-  plugins: ['~/plugins/cms'],
+  plugins: [
+    '~/plugins/cms',
+    '~/plugins/composition-api.js',
+    '~/plugins/rich-text-renderer.js'
+  ],
   head: {
     title: process.env.npm_package_name || '',
     meta: [

@@ -10,17 +10,17 @@
     <div id="layout">
       <nuxt :key="$route.fullPath"/>
 
-      <LazyHydrate when-visible>
+      <!-- <LazyHydrate when-visible>
         <BottomNavigation />
       </LazyHydrate>
       <CartSidebar />
       <WishlistSidebar />
       <LoginModal />
-      <Notification />
+      <Notification /> -->
     </div>
-    <LazyHydrate when-visible>
+    <!-- <LazyHydrate when-visible>
       <AppFooter />
-    </LazyHydrate>
+    </LazyHydrate> -->
   </div>
 </template>
 
